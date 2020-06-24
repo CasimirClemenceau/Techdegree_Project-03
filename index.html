@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">      
+    <title>Subscribe now for our newsletter </title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <header>
+            <p class="name">The Code Review</p>
+        </header>
+        
+        <main>
+            <h1>Sign up for our newsletter</h1> 
+            <p class="tagline">Get the latest news on how your code is doing right in your inbox</p>
+            <hr>
+            
+              
+            <form action="index.html" method="POST"> 
+                
+                
+                <fieldset class="contact-info">
+                    <legend>Contact Information</legend>
+                    
+                    <div class="flex">
+                    <label class="label" for="name" >Full Name</label>
+                    <input class="item" type="text" id="name" name="user_name" autocomplete="name" required placeholder="Required"> 
+                    </div>  
+                    
+                    <div class="flex">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required placeholder="Required">
+                    </div>
+
+                    <div class="flex">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="flex">
+                    <label for="street">Street Address</label>
+                    <input type="text" id="street" name="street" autocomplete="address-line1" placeholder="Add your address">
+                    </div>
+
+                    <div class="flex">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" autocomplete="address-level2" placeholder="Required"> 
+                    </div>
+
+                    <div class="flex">
+                    <label for="state">State</label>
+                    <select id="state" name="state" autocomplete="address-level1">
+                        <option value="" hidden>Choose State</option>
+                        <optgroup label="Stadtstaaten">
+                            <option value="Hamburg">Hamburg</option>
+                            <option value="Bremen">Bremen</option>
+                            <option value="Berlin">Berlin</option>
+                        </optgroup>
+                        <optgroup label="Flächenstaaten">
+                            <option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
+                            <option value="Mecklenburg-Vorpommern">Mecklenburg-Vorpommern</option>
+                            <option value="Bayern">Bayern</option>
+                            <option value="Sachsen">Sachsen</option>
+                            <option value="Niedersachsen">Niedersachsen</option>
+                            <option value="Schleswig-Holstein">Schleswig-Holstein</option>
+                            <option value="Baden-Württemberg">Baden-Württemberg</option>
+                            <option value="Rheinland-Pfalz">Rheinland-Pfalz</option>
+                            <option value="Saarland">Saarland</option>
+                            <option value="Thüringen">Thüringen</option>
+                            <option value="Brandenburg">Brandenburg</option>
+                            <option value="Hessen">Hessen</option>
+                        </optgroup>
+                    </select>
+                    </div>   
+
+                    <div class="flex"> 
+                    <label id="zipcode" for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="zip" autocomplete="postal-code" placeholder="Required">
+                    </div>
+
+                </fieldset>
+
+                <hr id="bottom_horizontal">
+                
+                
+                                
+                <fieldset class="additional">
+                    <legend>Newsletter</legend>
+                    <label class="headline">Select the newsletters you would like to receive</label>
+                    
+                    <div class="format">
+                    <input type="checkbox" id="html_news" name="html_news">
+                    <label for="html_news">HTML News</label>
+                    </div>
+                    <div class="format">
+                    <input type="checkbox" id="css_news" name="css_news">
+                    <label for="css_news">CSS News</label>
+                    </div>
+                    
+                    <div class="format">
+                    <input type="checkbox" id="javascript" name="javascript">
+                    <label for="javascript">Javascript News</label>
+                    </div>
+                    
+                    
+                    <label class="headline">Newsletter format</label>
+
+                    <div class="format">
+                    <input type="radio" id="html" name="html">
+                    <label for="html">HTML</label>
+                    </div>
+
+                    <div class="format">         
+                    <input type="radio" id="plain" name="plain">
+                    <label for="plain">Plain Text</label>
+                    </div>   
+
+                    <div class="format" id="textarea">
+                    <label for="topics">Other topics you'd like to hear about</label>
+                    <textarea id="topics" name="topics"></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Sign up</button>
+                
+
+            </form>
+           
+        </main>
+        
+        <footer>
+            <q>I wasn't hurt that badly. The doctor said all my bleeding was internal. That's where the blood's supposed to be.</q>
+            <p id="copyright">Copyright by Jake Peralta</p>
+        </footer>
+
+    </div>
+</body>
+</html>
